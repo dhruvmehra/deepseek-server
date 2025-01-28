@@ -12,7 +12,10 @@ services:
               count: all
               capabilities: [gpu]
     volumes:
-      - huggingface_cache:/root/.cache/huggingface
+      - /mnt/model-cache:/root/.cache/huggingface  # Changed this line
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
 
 volumes:
-  huggingface_cache:
+  model-cache:
+    driver: local
