@@ -12,7 +12,7 @@ services:
               count: all
               capabilities: [gpu]
     volumes:
-      - /mnt/model-cache:/root/.cache/huggingface  # Changed this line
+      - /opt/dlami/nvme/model-cache:/root/.cache/huggingface
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
 
