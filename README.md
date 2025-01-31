@@ -39,7 +39,7 @@ sudo nvidia-ctk runtime configure --runtime=docker
 sudo systemctl restart docker
 
 # Clone your repository
-git clone https://github.com/dhruv-pype/deepseek-server.git
+git clone https://github.com/dhruvmehra/deepseek-server.git
 cd deepseek-server
 
 # Start the service
